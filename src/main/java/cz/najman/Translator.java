@@ -56,12 +56,8 @@ public class Translator {
     }
 
     private boolean isAbleForTranslation(String word) {
-        return word != null && word.length() != 0 && !isWayInTheEnd(word)
+        return word != null && word.length() != 0 && !word.endsWith(WAY)
                 && (startWithConsonant(word) || startWithVowel(word));
-    }
-
-    private Boolean isWayInTheEnd(String input) {
-        return input.indexOf(WAY) + WAY.length() == input.length();
     }
 
     private boolean startWithConsonant(String input) {
