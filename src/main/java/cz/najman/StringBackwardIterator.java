@@ -10,6 +10,7 @@ public class StringBackwardIterator implements Iterator<Character> {
     public StringBackwardIterator(String str) {
         this.str = str;
         this.pos = str.length() - 1;
+        System.out.println("blahovablokada");
     }
 
     public boolean hasNext() {
